@@ -15,6 +15,12 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('inventaris.index')" :active="request()->routeIs('inventaris.index')">
+                        {{ __('Daftar Inventaris') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('inventaris.create')" :active="request()->routeIs('inventaris.create')">
+                        {{ __('Tambah Inventaris') }}
+                    </x-nav-link>
                 </div>
             </div>
 
